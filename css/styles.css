@@ -371,18 +371,35 @@ h3 {
 }
 
 /*-----------------------------partners------------------------------*/
-
-.partners-list {
-  display: flex;
-}
-
-.partners-item {
+.partners-link {
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  display: flex;
   width: 170px;
   height: 92px;
+  align-items: center;
+  justify-content: center;
+}
+.partners-link:hover {
+  border: 1px solid #2196f3;
 }
 
+.partners-item:not(:last-child) {
+  margin-right: 30px;
+}
+.partners-list {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.partners-icon {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+}
+.partners-icon:hover {
+  fill: #2196f3;
+}
 /*----------------------------footer---------------------------------*/
 footer {
   background-color: #2f303a;
@@ -393,6 +410,7 @@ footer {
 footer .logo {
   margin-right: 0;
 }
+
 .logo-footer {
   color: #ffffff;
   font-family: Raleway;
