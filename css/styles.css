@@ -471,12 +471,24 @@ footer .logo {
   fill: #afb1b8;
 }
 
+.footer-main {
+  width: 231px;
+  height: 132px;
+  margin: 0;
+}
 .footer-button-item:not(:last-child) {
   margin-right: 10px;
 }
 .footer-social {
   display: flex;
-  justify-content: center;
+  width: 206px;
+  height: 80px;
+  align-items: baseline;
+  flex-direction: column;
+}
+
+.footer .container {
+  display: flex;
   align-items: baseline;
 }
 
