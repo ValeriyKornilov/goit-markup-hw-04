@@ -407,6 +407,10 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer .container {
+  display: flexbox;
+  align-items: baseline;
+}
 footer .logo {
   margin-right: 0;
 }
@@ -446,9 +450,12 @@ footer .logo {
   display: flex;
   justify-content: center;
 }
+.footer-item {
+  display: flex;
+}
 
 .footer-button {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
   width: 44px;
   height: 44px;
   display: flex;
@@ -456,19 +463,15 @@ footer .logo {
   align-items: center;
   border-radius: 50%;
   border: 1px solid transparent;
-  color: #afb1b8;
+  fill: #ffffff;
 }
 
 .footer-button:hover {
   background-color: var(--accent-color);
 }
 
-.footer-icon:hover {
-  fill: #ffffff;
-}
-
 .footer-icon {
-  fill: #afb1b8;
+  fill: #ffffff;
 }
 
 .footer-main {
@@ -485,11 +488,16 @@ footer .logo {
   height: 80px;
   align-items: baseline;
   flex-direction: column;
+  margin-top: -120px;
+  padding-left: 301px;
 }
-
-.footer .container {
-  display: flex;
-  align-items: baseline;
+.footer-social-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 /*---------------portfolio.work-type--------------------------*/
